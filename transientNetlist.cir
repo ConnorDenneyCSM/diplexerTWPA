@@ -4687,7 +4687,7 @@ R2 N2400 NR2 50
 R22 NR2 0 0.001
 .include RPMCell_FabReady.subckt
 .model jjmod jj(level=1 icrit=5u cap=240.522f rtype=0)
-.tran 1.250000e-11 4.000000e-07 start=3.000000e-07 sweep I2[prm3] 2.000000e+09 1.500000e+10 5.000000e+07
+.tran 1.250000e-11 4.000000e-07 start=3.000000e-07 sweep I2[prm3] 4e9 12e9 0.5e9
 .save V(N1) V(N2400) V(NR2) V(NR1) V(NP)
 .options topologycheck=0
 .end
