@@ -1,5 +1,5 @@
 * 8GHz TWPA Transient Design
-I1 N1 NP SIN(0 6.000000e-06 8.555329e+09)
+I1 N1 NP SIN(0 2.000000e-06 8.4818e9)
 I2 N1 NR1 SIN(0 3.000000e-08 $value1)
 R1 N1 0 50
 R11 NR1 0 0.001
@@ -4686,7 +4686,7 @@ C2399 N2400 0 2.6e-14
 R2 N2400 NR2 50
 R22 NR2 0 0.001
 .include RPMCell_FabReady.subckt
-.model jjmod jj(level=1 icrit=5u cap=240.522f rtype=0)
+.model jjmod jj(level=1 icrit=3u cap=240.522f rtype=0)
 .tran 1.250000e-11 4.000000e-07 start=3.000000e-07 sweep I2[prm3] 4e9 12e9 0.5e9
 .save V(N1) V(N2400) V(NR2) V(NR1) V(NP)
 .options topologycheck=0
@@ -4694,5 +4694,5 @@ R22 NR2 0 0.001
 .control
 set loopthrds=30
 run
-write wrspiceResults/RPMCell_FabReadyData.txt
+write wrspiceResults/TWPA_3uAJJ_1uApkPump.txt
 .endc
