@@ -1,5 +1,5 @@
 * 8GHz TWPA Transient Design
-I1 N1 NP SIN(0 2.000000e-06 8.4818e9)
+I1 N1 NP SIN(0 1.5000000e-06 8.4692e9)
 I2 N1 NR1 SIN(0 3.000000e-08 $value1)
 R1 N1 0 50
 R11 NR1 0 0.001
@@ -4694,5 +4694,5 @@ R22 NR2 0 0.001
 .control
 set loopthrds=30
 run
-write wrspiceResults/TWPA_3uAJJ_1uApkPump.txt
+write wrspiceResults/TWPA_3uAJJ_1p5uApkPump.txt
 .endc
